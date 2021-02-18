@@ -1,0 +1,11 @@
+新建 word 文件就会让你选模板……更可以选用户模板……
+保存文件时，*.docx 下面就是*.dot （ template ）……
+
+我猜……楼主可能「样式」都很少用，标题都是直接「正文+加粗+二号+居中」吧……
+
+
+  /*
+  images_upload_handler: function (blobInfo, success, failure) {
+    success(blobInfo.blob().name);
+  },
+  */

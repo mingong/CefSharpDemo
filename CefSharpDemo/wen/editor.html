@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./pure-min.css" media="screen" title="no title" charset="utf-8">
+    <title>editor</title>
+    <style media="screen">
+      body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+
+      form {
+        height: 100%;
+      }
+
+      button {
+        height: 40px;
+      }
+
+      textarea {
+        height: calc(100% - 40px);
+      }
+    </style>
+  </head>
+  <body>
+    <form class="pure-form">
+        <!--
+		<textarea id="editor" class="pure-input-1" placeholder="我是文本框"></textarea>
+        <button type="submit" class="pure-button pure-input-1 pure-button-primary" onclick="save(); return false;">保存</button>
+		-->
+		<textarea id="editor" class="pure-input-1"></textarea>
+        <button type="submit" class="pure-button pure-input-1 pure-button-primary" onclick="save(); return false;">Save</button>
+    </form>
+    <script type="text/javascript">
+      function callCs() {
+        alert(cefsharp.stringProp);
+        cefsharp.showHelloCefSharp();
+      }
+
+      function wen() {
+        editor.value = "";
+      }
+
+      function loadText(/*path, */text) {
+        /*
+        editor.dataset.path = path;
+        */
+        editor.value = text;
+      }
+
+      function save() {
+        var content = editor.value;
+        return content;
+      }
+    </script>
+  </body>
+</html>
